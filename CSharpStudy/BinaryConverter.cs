@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// 85页， 获取二进制形式的Ulong数据
+/// </summary>
    public class BinaryConverter
     {
-       /// <summary>
-       /// 获取二进制形式的Ulong数据
-       /// </summary>
        //public static void Main() {
        //    const int size = 64;
        //    ulong value;
