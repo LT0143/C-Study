@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BinaryConverter.cs" />
     <Compile Include="DataStorage.cs" />
+    <Compile Include="ExtendMethod.cs" />
     <Compile Include="Num.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

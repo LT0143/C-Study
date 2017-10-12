@@ -7,7 +7,7 @@ using System.Text;
 /// <summary>
 /// 62页，浮点类型的不准确造成的非预期不相等
 /// </summary>
-   public class Num
+   public class Num 
     {
        //public static void Main()
        //{
