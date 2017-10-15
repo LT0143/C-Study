@@ -11,7 +11,7 @@ using System.IO;
   public  class DataStorage
     {
       /// <summary>
-      /// 写入文件
+      /// 写入文件 
       /// </summary>
       /// <param name="employee"></param>
       public static void Store(Employee employee)
@@ -60,8 +60,10 @@ using System.IO;
       public void Save() 
       {
           DataStorage.Store(this);
+         ExtendMethod.GetCentreShift(this);
+
       }
-      public void SetName(string firstName,string lastName)
+    public void SetName(string firstName,string lastName)
       {
           this.firstName = firstName;
           this.lastName = lastName;
@@ -75,18 +77,22 @@ using System.IO;
   }
   public class Program
   {
-      //static void Main()
-      //{
-      //    Employee employee1;
-      //    Employee employee2 = new Employee();
-      //    employee2.SetName("Inigo", "Montoya");
-      //    employee2.Save();
-
-      //    employee1 = DataStorage.Load("Inigo", "Montoya");
-
-      //    Console.WriteLine("{0}:{1}",employee1.GetName(),
-      //        employee1.salary);
-      //}
+      static void Main()
+      {
+          Employee employee1;
+          Employee employee2 = new Employee();
+        Employee emp3 = new Employee();
+        employee2.SetName("Inigo", "Montoya");
+        emp3.SetName("Inigo3", "Montoya3");
+        employee2.Save();
+          employee1 = DataStorage.Load("Inigo", "Montoya");
+        //GetCentreShift第一个参数this开头，则可以如下不输入第一个参数调用
+        employee1.GetCentreShift();
+        emp3.GetCentreShift();
+      
+        Console.WriteLine("{0}:{1}",employee1.GetName(),
+              employee1.salary);
+      }
   }
 
 

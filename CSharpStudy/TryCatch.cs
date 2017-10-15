@@ -12,9 +12,9 @@ using System.Threading.Tasks;
        //{
        //    string firstName;
        //    string ageText;
-       //    int age;
+       //    int age; 
        //    int result=0;
-
+        
        //    Console.Write("Enter your first name:");
        //    firstName = Console.ReadLine();
 
