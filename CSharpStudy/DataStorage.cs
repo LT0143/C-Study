@@ -77,6 +77,7 @@ using System.IO;
   }
   public class Program
   {
+    /*
       static void Main()
       {
           Employee employee1;
@@ -93,6 +94,7 @@ using System.IO;
         Console.WriteLine("{0}:{1}",employee1.GetName(),
               employee1.salary);
       }
+      */
   }
 
 
