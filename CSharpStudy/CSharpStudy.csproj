@@ -41,9 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AEvent.cs" />
     <Compile Include="BinaryConverter.cs" />
+    <Compile Include="ConsoleListControl.cs" />
     <Compile Include="DataStorage.cs" />
     <Compile Include="ExtendMethod.cs" />
+    <Compile Include="MVVM\BagViewModel.cs" />
+    <Compile Include="MVVM\UserViewModel.cs" />
     <Compile Include="Num.cs" />
     <Compile Include="OverrideCS.cs" />
     <Compile Include="Program.cs" />

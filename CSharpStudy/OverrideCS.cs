@@ -53,6 +53,7 @@ public class OverrideCS
             Console.WriteLine("SupSupDerivedClass");
         }
     }
+    /*
     public static void Main() 
     {  
         //new对象就是调用对象中的方法，不受方法的修饰符影响    结果如下
@@ -93,5 +94,6 @@ public class OverrideCS
         supsupToder.DisplayName();
         supToder.DisplayName();
     }
+    */
 }
 
