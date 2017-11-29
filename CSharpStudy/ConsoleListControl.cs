@@ -158,6 +158,7 @@ class ConsoleListControl
 
 class Mypro
 {
+    /*早期测试入口
     public static void Main()
     {
         Contact[] contacts = new Contact[6];
@@ -191,6 +192,6 @@ class Mypro
        // values = publicaiton[0].ColumnValues;
         values = ((IListable)publicaiton[1]).ColumnValues;
     }
-
+    */
 }
 

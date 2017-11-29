@@ -43,9 +43,13 @@
   <ItemGroup>
     <Compile Include="AEvent.cs" />
     <Compile Include="BinaryConverter.cs" />
+    <Compile Include="CommandLineHandler.cs" />
+    <Compile Include="CommandLineInfo.cs" />
     <Compile Include="ConsoleListControl.cs" />
     <Compile Include="DataStorage.cs" />
+    <Compile Include="DynamicCallMember.cs" />
     <Compile Include="ExtendMethod.cs" />
+    <Compile Include="GetType.cs" />
     <Compile Include="MVVM\BagViewModel.cs" />
     <Compile Include="MVVM\UserViewModel.cs" />
     <Compile Include="Num.cs" />
