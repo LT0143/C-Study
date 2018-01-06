@@ -46,6 +46,7 @@
     <Compile Include="ConsoleListControl.cs" />
     <Compile Include="DataStorage.cs" />
     <Compile Include="ExtendMethod.cs" />
+    <Compile Include="FileSettingProvider.cs" />
     <Compile Include="MVVM\BagViewModel.cs" />
     <Compile Include="MVVM\UserViewModel.cs" />
     <Compile Include="Num.cs" />

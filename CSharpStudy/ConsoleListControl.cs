@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 interface IListable
 {
     /// <summary>
-    /// 列的值
+    /// 列的值。不允许接口成员使用访问修饰符，自动定义为公共成员
     /// </summary>
     string[] ColumnValues
     { get; }
