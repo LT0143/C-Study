@@ -72,10 +72,10 @@ public struct Pair<TFirst, TSecond> : IPair<TFirst, TSecond>
 
 public class PairTest
 {
-    public static void Main(string[] args)
-    {
-        Pair<int, string> historicalEvent = new Pair<int, string>(1914, "what ....");
-        Console.WriteLine("{0},{1}", historicalEvent.First, historicalEvent.Second);
-    }
+    //public static void Main(string[] args)
+    //{
+    //    Pair<int, string> historicalEvent = new Pair<int, string>(1914, "what ....");
+    //    Console.WriteLine("{0},{1}", historicalEvent.First, historicalEvent.Second);
+    //}
 
 }
