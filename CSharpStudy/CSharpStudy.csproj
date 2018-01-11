@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Action\broadAction.cs" />
     <Compile Include="AEvent.cs" />
     <Compile Include="BinaryConverter.cs" />
     <Compile Include="BinaryTree.cs" />
