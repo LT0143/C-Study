@@ -18,15 +18,15 @@ public class broadAction
 
     Func<object> objFunc = strFunc;
 
-    public static void Main()
-    {
+    //public static void Main()
+    //{
 
-        objAction(121);
+    //    objAction(121);
 
-        Console.WriteLine();
+    //    Console.WriteLine();
 
 
-    }
+    //}
  
 }
  
