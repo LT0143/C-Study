@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Action\broadAction.cs" />
+    <Compile Include="Action\Thermostat.cs" />
     <Compile Include="AEvent.cs" />
+    <Compile Include="Attribute\VersionAttribute.cs" />
     <Compile Include="BinaryConverter.cs" />
     <Compile Include="BinaryTree.cs" />
     <Compile Include="CommandLineHandler.cs" />

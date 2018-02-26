@@ -9,8 +9,8 @@ using System.IO;
 /// 121页，参数的关键字 ref out params
 /// </summary>
   public  class RefAndOut
-    {
-      /**
+{
+    /**
       public static void Main()
       {
           int i = 1;
@@ -43,7 +43,7 @@ using System.IO;
 
       public static bool OutValue(out int i) 
       {
-          i = 9;
+          i = 9; 
           return true;
       }
 
@@ -56,7 +56,7 @@ using System.IO;
       static string combine( string a, params string[] paths) 
       {
           string result = string.Empty;
-
+         
           foreach (string path in paths)
           {
               result = Path.Combine(result,path);

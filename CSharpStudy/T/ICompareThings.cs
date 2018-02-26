@@ -29,7 +29,7 @@ public interface ICompareThings<in T>
             return true;
         }
     }
-    static void Main() 
+  /*  static void Main() 
     {
         ICompareThings<Fruit> fc = new FruitComparer();
         Apple ap1 = new Apple();
@@ -45,5 +45,6 @@ public interface ICompareThings<in T>
         //下面这个会报错，Orange不是apple的子类
         //bool b4 = ac.FirstIsBetter(ap2, org);
     }
+    */
 }
  
