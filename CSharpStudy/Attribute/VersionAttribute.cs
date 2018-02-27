@@ -21,14 +21,14 @@ public class MyCode
 
 public class AttributeTest
 {
-    static void Main(string[] args)
-    {
-        var info = typeof (MyCode);
-        var classAttribute = (VersionsAttribute) Attribute.GetCustomAttribute(info, typeof (VersionsAttribute));
-        Console.WriteLine(classAttribute.Name);
-        Console.WriteLine(classAttribute.Date);
-        Console.WriteLine(classAttribute.Describtion);
-    }
+    //static void Main(string[] args)
+    //{
+    //    var info = typeof (MyCode);
+    //    var classAttribute = (VersionsAttribute) Attribute.GetCustomAttribute(info, typeof (VersionsAttribute));
+    //    Console.WriteLine(classAttribute.Name);
+    //    Console.WriteLine(classAttribute.Date);
+    //    Console.WriteLine(classAttribute.Describtion);
+    //}
 }
 
  
