@@ -34,7 +34,9 @@ public class AnonymousType
         // patent3.Title = "1212";
 
         collectionInitializers();
+        Console.WriteLine();
 
+        AnonymousArry();
     }
 
     //集合初始化器
@@ -61,6 +63,31 @@ public class AnonymousType
         {
             Console.WriteLine(item);
         }
+    }
+
+    //匿名类型数组,由匿名类型构成的数组，每个项的类型必须相同
+    static void AnonymousArry()
+    {
+        var worldCup = new[]
+        {
+            new
+            {
+                teamNma = "a",
+                players = new string[]
+                {
+                    "a", "b", "c"
+                }
+            },
+            new
+            {
+                teamNma = "b",
+                players = new string[]
+                {
+                    "d", "e", "f"
+                }
+            }
+        };
+        Print(worldCup);
     }
 }
  
