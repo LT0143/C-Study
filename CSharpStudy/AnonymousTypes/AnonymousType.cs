@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 /// 匿名类型
 /// </summary>
 public class AnonymousType
-{
+{/*
     static void Main()
     {
         var patent1 = new {Title = "B", YearOfPublication = "1784"}; //匿名类型,
@@ -37,8 +37,9 @@ public class AnonymousType
         Console.WriteLine();
 
         AnonymousArry();
+        ForeachStack();
     }
-
+    */
     //集合初始化器
     static void collectionInitializers()
     {
@@ -54,16 +55,10 @@ public class AnonymousType
             "p",
             "z"
         };
-        Print(sevenWorldBlunders);
+        PrintTool.PrintIEnumerable(sevenWorldBlunders);
     }
 
-    private static void Print<t>(IEnumerable<t> items)
-    {
-        foreach (t item in items)
-        {
-            Console.WriteLine(item);
-        }
-    }
+
 
     //匿名类型数组,由匿名类型构成的数组，每个项的类型必须相同
     static void AnonymousArry()
@@ -87,7 +82,45 @@ public class AnonymousType
                 }
             }
         };
-        Print(worldCup);
+        PrintTool.PrintIEnumerable(worldCup);
+    }
+
+    /// <summary>
+    /// foreach循环期间集合中的计数是不能变动，集合项本身也不能被修改
+    /// </summary>
+   static void ForeachStack()
+    {
+        Stack<int> statck = new Stack<int>();
+        Stack<int>.Enumerator enumerator;
+        IDisposable disposable;
+        int num;
+
+        enumerator = statck.GetEnumerator();
+        //try
+        //{
+        //    while (enumerator.MoveNext())
+        //    {
+        //        num = enumerator.Current;
+        //        Console.WriteLine(num);
+        //    }
+        //}
+        //finally
+        //{
+        //    //退出循环后对状态进行清理
+        //    disposable = enumerator;
+        //    disposable.Dispose();
+        //}
+
+        //使用using的错误处理和资源清理
+        using (enumerator)
+        {
+            while (enumerator.MoveNext())
+            {
+                num = enumerator.Current;
+                Console.WriteLine(num);
+            }
+        }
+      
     }
 }
  

@@ -50,9 +50,11 @@
     <Compile Include="BinaryTree.cs" />
     <Compile Include="CommandLineHandler.cs" />
     <Compile Include="CommandLineInfo.cs" />
+    <Compile Include="Common\PrintTool.cs" />
     <Compile Include="ConsoleListControl.cs" />
     <Compile Include="DataStorage.cs" />
     <Compile Include="DynamicCallMember.cs" />
+    <Compile Include="Linq\MyLinq.cs" />
     <Compile Include="T\EntityBase.cs" />
     <Compile Include="ExtendMethod.cs" />
     <Compile Include="GetType.cs" />
