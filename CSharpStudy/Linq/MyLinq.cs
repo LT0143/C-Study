@@ -36,6 +36,7 @@ public class Inventor
 
 class MyLinq
 {
+    /*
     static void Main()
     {
         IEnumerable<Patent> patents = patentData.patents;
@@ -58,10 +59,8 @@ class MyLinq
         //排序
         IEnumerable<Patent> items = patents.OrderBy(patent => patent.Title);
         PrintTool.PrintIEnumerable(items);
-
-
-
     }
+    */
 }
 
 public static class patentData

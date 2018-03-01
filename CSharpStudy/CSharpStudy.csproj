@@ -52,8 +52,11 @@
     <Compile Include="CommandLineInfo.cs" />
     <Compile Include="Common\PrintTool.cs" />
     <Compile Include="ConsoleListControl.cs" />
+    <Compile Include="CustomIEnumerable\ContactEquality.cs" />
     <Compile Include="DataStorage.cs" />
     <Compile Include="DynamicCallMember.cs" />
+    <Compile Include="Linq\LinqSelect.cs" />
+    <Compile Include="Linq\ManyToMany.cs" />
     <Compile Include="Linq\MyLinq.cs" />
     <Compile Include="T\EntityBase.cs" />
     <Compile Include="ExtendMethod.cs" />

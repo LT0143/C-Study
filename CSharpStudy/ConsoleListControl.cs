@@ -27,7 +27,7 @@ public abstract class PdaItem
     }
 }
 
-class Contact : PdaItem, IListable
+public class Contact : PdaItem, IListable
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }
