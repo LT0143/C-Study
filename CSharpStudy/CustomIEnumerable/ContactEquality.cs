@@ -37,7 +37,7 @@ public class ContactEquality:IEqualityComparer<Contact>
         return h1 * 23+ h2;
 
     }
-
+    /*
     static void Main()
     {
         Contact x = new Contact("aaa", "aaa", "add","123");
@@ -49,6 +49,6 @@ public class ContactEquality:IEqualityComparer<Contact>
         Console.WriteLine(contacte.GetHashCode(y));
 
     }
-
+    */
 }
  

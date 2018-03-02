@@ -20,20 +20,24 @@ public class ManyToMany
         //employee => employee.DepartmentId，指出每个employee的key是DepartmentId。
         //department => department.Id，将id作为key，每个员工都联接到employee.DepartmentId=department.Id的一个部门。
         //最后一个参数是匿名类型，描述如何对结果进行选取，Department用于存储联接的department对象
-           var items = employees.Join(departments, employee => employee.DepartmentId, department => department.Id,
-              (employee, department) => new
-              {
-                  employee.Id,employee.Name,employee.Title,Department = department
-              });
+        var items = employees.Join(departments, employee => employee.DepartmentId, department => department.Id,
+            (employee, department) => new
+            {
+                employee.Id,
+                employee.Name,
+                employee.Title,
+                Department = department
+            });
 
-          foreach (var item in items)
-          {
-              Console.WriteLine("{0}({1})",item.Name,item.Title);
-              Console.WriteLine("\t"+item.Department);
-          }
-           
+        foreach (var item in items)
+        {
+            Console.WriteLine("{0}({1})", item.Name, item.Title);
+            Console.WriteLine("\t" + item.Department);
+        }
+
         //对数据进行分组(employee) => employee.DepartmentId是分组的依据
-        IEnumerable<IGrouping<int,LinqEmployee>> groupedEnumerables = employees.GroupBy((employee) => employee.DepartmentId) ;
+        IEnumerable<IGrouping<int, LinqEmployee>> groupedEnumerables =
+            employees.GroupBy((employee) => employee.DepartmentId);
 
         foreach (var groupedEnumerable in groupedEnumerables)
         {
@@ -42,7 +46,7 @@ public class ManyToMany
             {
                 Console.WriteLine("\t" + employee);
             }
-            Console.WriteLine("\t count " + groupedEnumerable.Count()); 
+            Console.WriteLine("\t count " + groupedEnumerable.Count());
         }
     }
     */
