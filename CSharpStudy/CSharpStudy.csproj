@@ -45,6 +45,11 @@
     <Compile Include="Action\Thermostat.cs" />
     <Compile Include="AEvent.cs" />
     <Compile Include="AnonymousTypes\AnonymousType.cs" />
+    <Compile Include="Attribute\CommandLineHander.cs" />
+    <Compile Include="Attribute\commandLineInfo.cs" />
+    <Compile Include="Attribute\CommandLineSwitchRequiredAttribute.cs" />
+    <Compile Include="Attribute\Document.cs" />
+    <Compile Include="Attribute\FlagsAttribute.cs" />
     <Compile Include="Attribute\VersionAttribute.cs" />
     <Compile Include="BinaryConverter.cs" />
     <Compile Include="BinaryTree.cs" />
@@ -58,6 +63,7 @@
     <Compile Include="Linq\LinqSelect.cs" />
     <Compile Include="Linq\ManyToMany.cs" />
     <Compile Include="Linq\MyLinq.cs" />
+    <Compile Include="Thread\RunningASpeparate.cs" />
     <Compile Include="T\EntityBase.cs" />
     <Compile Include="ExtendMethod.cs" />
     <Compile Include="GetType.cs" />

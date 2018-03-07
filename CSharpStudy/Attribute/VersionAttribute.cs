@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,14 +15,15 @@ public class VersionsAttribute : Attribute
     public string Describtion { get; set; }
 }
 
-[Versions(Name = "hydd",Date = "2018-2-26",Describtion = "hydd is class")]
+[Versions(Name = "hydd", Date = "2018-2-26", Describtion = "hydd is class")]
 public class MyCode
 {
-    
+
 }
 
 public class AttributeTest
 {
+   /*
     static void Main(string[] args)
     {
         //var info = typeof(MyCode);
@@ -29,6 +32,7 @@ public class AttributeTest
         //Console.WriteLine(classAttribute.Date);
         //Console.WriteLine(classAttribute.Describtion);
 
+        //泛型反射
         //Type type;
         //type = typeof (System.Nullable<>);
         //Console.WriteLine(type.ContainsGenericParameters);//判断方法是否包含尚未设置的泛型参数
@@ -40,15 +44,41 @@ public class AttributeTest
         //Console.WriteLine(type.ContainsGenericParameters);//判断方法是否包含尚未设置的泛型参数
         //Console.WriteLine(type.IsGenericType);
 
-        Stack<int> s = new Stack<int>();
-        Type t = s.GetType();
-        foreach (Type argument in t.GetGenericArguments())
+        //Stack<int> s = new Stack<int>();
+        //Type t = s.GetType();
+        //foreach (Type argument in t.GetGenericArguments())
+        //{
+        //    System.Console.WriteLine("Type parameter: " + argument.FullName);
+        //}
+  
+        //flag特性,这个文件路径要先创建下
+        string directoryName = @"d:/test";
+        string fileName = directoryName+"/enumtest.txt";
+
+        DirectoryInfo directory = new DirectoryInfo(directoryName);
+        try
         {
-            System.Console.WriteLine("Type parameter: "+ argument.FullName);
+            if (!directory.Exists)
+                directory.Create();
+        }
+        catch (IOException e)
+        {
+            Console.WriteLine("the process failed:{0}", e.ToString());
         }
 
+
+        FileInfo file = new FileInfo(fileName);
+            if (!file.Exists)
+                file.Create();
+       
+        file.Attributes = FileAttributes.Hidden | FileAttributes.ReadOnly;
+        Console.WriteLine("\"{0}\" output as \"{1}\"",file.Attributes.ToString().Replace(","," |"),file.Attributes);
+
+        FileAttributes attributes =(FileAttributes) Enum.Parse(typeof(FileAttributes),file.Attributes.ToString());
+        Console.WriteLine(attributes);
     }
+    */
 }
 
- 
- 
+
+
